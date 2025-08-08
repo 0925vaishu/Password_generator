@@ -21,7 +21,7 @@ One-click copy to clipboard
 Getting Started
 1. Clone or Download
 bash
-git clone https://github.com/yourusername/password-generator.git
+git clone (https://github.com/0925vaishu/Password_generator/blob/main/README.md)
 Or download the ZIP and extract it.
 
 2. Run the App
