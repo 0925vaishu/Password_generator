@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id="bg-text" src="https://t4.ftcdn.net/jpg/06/67/04/01/360_F_667040109_YkiAQqxcVgitoMBncbsEBCqJuO9TxCU7.jpg"
+        alt="image"></img>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <hr />
+        <label>
+            Password Length:
+            <input id="len" type="range" min="6" max="20" value="12" oninput="lenValue.textContent = this.value">
+            <span id="lenValue"></span>
+        </label>
+
+        <label><input id="upper" type="checkbox" checked>Include Uppercase</label>
+        <label><input id="lower" type="checkbox" checked>Include Lowercase</label>
+        <label><input id="nums" type="checkbox" checked>Include Numbers</label>
+        <label><input id="special" type="checkbox" checked>Include Special Characters</label>
+        <button class="btn" onclick="generate()">Generate</button>
+        <button class="btn" onclick="copyPassword()">Copy</button>
+        <div class="output" id="passOut">Your password will appear here</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
